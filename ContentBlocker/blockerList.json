@@ -1,0 +1,53 @@
+[
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": ".*dailymail.*"
+        }
+    },
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": ".*onet.*"
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "a[href*='www.dailymail']"
+        },
+        "trigger": {
+            "url-filter": ".*"
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "a[href*='www.onet']"
+        },
+        "trigger": {
+            "url-filter": ".*"
+        }
+    },
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": ".*googlesyndicate.*"
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "a[href*='www.googlesyndicate']"
+        },
+        "trigger": {
+            "url-filter": ".*"
+        }
+    }
+]
